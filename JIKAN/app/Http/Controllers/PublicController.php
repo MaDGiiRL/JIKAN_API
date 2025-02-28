@@ -19,9 +19,9 @@ class PublicController extends Controller
 
     public function anime()
     {
-        $animes = Http::get('https://api.jikan.moe/v4/top/anime')->json();
-        return view('anime', ['animes' => $animes['data']]);
-        
+        $animes = Http::get('https://api.jikan.moe/v4/top/anime')->json('data');
+
+        return view('anime', ['animes' => $animes]);
     }
 
     public function contact()

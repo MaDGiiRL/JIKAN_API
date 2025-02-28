@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" data-bs-theme="auto">
-
+<html lang="en" data-bs-theme="auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

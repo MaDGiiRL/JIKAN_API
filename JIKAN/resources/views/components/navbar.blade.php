@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top " id="mainNav" data-aos="fade-down">
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" data-aos="fade-down">
     <!-- Container wrapper -->
     <div class="container">
         <!-- Navbar brand -->

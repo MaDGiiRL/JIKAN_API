@@ -61,12 +61,13 @@ ul.navbar-nav {
 }
 
 .navbar {
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease;
 }
 
 .navbar.shrink {
     background-color: black !important;
     padding: 10px 15px !important;
+    box-shadow: 0 0 8px var(--purple)
 }
 
 /* Header 1 */
@@ -123,4 +124,9 @@ ul.navbar-nav {
 }
 .text-purple {
     color: var(--purple)
+}
+
+
+.card{
+    overflow: hidden;
 }
