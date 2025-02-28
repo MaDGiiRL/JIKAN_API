@@ -23,7 +23,11 @@
         <p class="card-text mb-auto">{{$synopsis}}</p>
         <a class="btn btn-light role=" button" href="{{$button}}">Details</a>
     </div>
-    <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail" src="{{$img}}" style="width: 200px; height: 260px;">
+    <div class="d-flex jusitify-content-center">
+    <img class="card-img-right" alt="Thumbnail" src="{{$img}}" style="width: 200px; height: 260px;">
+    </div>
 </div>
 
+
 @endif
+
