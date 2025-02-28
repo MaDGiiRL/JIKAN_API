@@ -9,7 +9,9 @@ body {
     font-family: var(--font-2);
 }
 
-
+.text-purple{
+    color: var(--purple)
+}
 /* Navbar */
 a.nav-link {
     font-family: var(--font-1);
@@ -37,14 +39,14 @@ ul.navbar-nav {
     border-color: var(--purple)
 }
 
-.btn-light:hover {
+.btn-light{
     background: var(--purple);
     color: white;
     border-color: var(--purple)
 }
 
 .btn-light:hover {
-    background: var(--purple);
+    background: #6d0294;
     color: white;
     border-color: var(--purple)
 }
@@ -126,7 +128,13 @@ ul.navbar-nav {
     color: var(--purple)
 }
 
-
+/* Cards */
 .card{
     overflow: hidden;
+}
+.shadow-custom{
+    box-shadow: 0 0 8px var(--purple)
+}
+.purple-bg{
+    background-color: #BD00FF;
 }
