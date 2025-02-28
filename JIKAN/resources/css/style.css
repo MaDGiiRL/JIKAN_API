@@ -12,6 +12,10 @@ body {
 .text-purple{
     color: var(--purple)
 }
+a{
+    text-decoration:none
+}
+
 /* Navbar */
 a.nav-link {
     font-family: var(--font-1);

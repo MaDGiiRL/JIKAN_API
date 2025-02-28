@@ -24,17 +24,19 @@
                         </p>
                         <p class="card-text">
                         <h5>Background</h5>
-                        {{$anime['background']}}
+                        {{ !empty($anime['background']) ? $anime['background'] : 'No data in our database.' }}
                         </p>
 
                         <div class="mb-2  d-flex flex-row align-items-center justify-content between">
                             @foreach($anime['genres'] as $genre)
-                            <span class="badge purple-bg ms-2 me-2">{{$genre['name']}}</span>
-                            @endforeach
+                            <a href="{{route('anime_genres', ['id' => $genre['mal_id'], 'genre' => $genre['name']])}}" class="badge purple-bg ms-2 me-2">{{$genre['name']}}</a>@endforeach
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="d-flex justify-content-start mt-5">
+            <button class="btn btn-light" href="{{route('anime')}}">Go Back</button>
         </div>
     </div>
 </x-layout>
