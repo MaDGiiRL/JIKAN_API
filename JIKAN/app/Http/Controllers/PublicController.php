@@ -59,7 +59,7 @@ class PublicController extends Controller
 
     public function manga_genres($id, $genre)
     {
-        $mangas = Http::get("https://api.jikan.moe/v4/manga?genres=$id}")->json('data');
+        $mangas = Http::get("https://api.jikan.moe/v4/manga?genres={$id}")->json('data');
 
         return view('manga_genres', ['mangas' => $mangas, 'genre' => $genre]);
     }
@@ -90,14 +90,14 @@ class PublicController extends Controller
     {
         $anime = Http::get("https://api.jikan.moe/v4/anime/{$id}")->json('data');
 
-        $animes = Http::get('https://api.jikan.moe/v4/manga')->json('data');
+        $animes = Http::get('https://api.jikan.moe/v4/anime')->json('data');
 
         return view('anime_detail', ['anime' => $anime, 'animes' => $animes]);
     }
 
     public function anime_genres($id, $genre)
     {
-        $animes = Http::get("https://api.jikan.moe/v4/anime?genres=$id}")->json('data');
+        $animes = Http::get("https://api.jikan.moe/v4/anime?genres={$id}")->json('data');
 
         return view('anime_genres', ['animes' => $animes, 'genre' => $genre]);
     }

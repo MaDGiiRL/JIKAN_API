@@ -34,7 +34,7 @@ class ContactUs extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('no-reply@aulab.it', 'No-Reply'),
+            from: new Address('no-reply@animesonline.it', 'No-Reply'),
             subject: 'Thank You!',
         );
     }
@@ -45,7 +45,7 @@ class ContactUs extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.contact_mail',
+            view: 'mail.submit',
         );
     }
 
