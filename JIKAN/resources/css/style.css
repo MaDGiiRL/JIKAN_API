@@ -9,11 +9,12 @@ body {
     font-family: var(--font-2);
 }
 
-.text-purple{
+.text-purple {
     color: var(--purple)
 }
-a{
-    text-decoration:none
+
+a {
+    text-decoration: none
 }
 
 /* Navbar */
@@ -43,7 +44,7 @@ ul.navbar-nav {
     border-color: var(--purple)
 }
 
-.btn-light{
+.btn-light {
     background: var(--purple);
     color: white;
     border-color: var(--purple)
@@ -199,25 +200,284 @@ ul.navbar-nav {
     transition: all 1s;
     font-size: 25px
 }
+
 .btn-link i:hover {
     color: var(--purple)
 }
+
 .text-purple {
     color: var(--purple)
 }
 
 /* Cards */
-.card{
+.card {
     overflow: hidden;
 }
-.shadow-custom{
+
+.shadow-custom {
     box-shadow: 0 0 8px var(--purple)
 }
-.purple-bg{
+
+.purple-bg {
     background-color: #BD00FF;
 }
 
 
+/* Form Filter by Category */
+
+.filter-form {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Stile per la barra di ricerca */
+.search-input {
+    background-color: #171717;
+    color: white;
+    border: 2px solid #BD00FF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+}
+
+/* Stile per il dropdown */
+.genre-select {
+    background-color: #171717;
+    color: white;
+    border: 2px solid #BD00FF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Quando viene cliccato (focus), lo sfondo resta scuro */
+.form-control:focus {
+    background-color: #2c2c2c;
+    color: white;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+    outline: none;
+}
+
+.genre-select:focus {
+    outline: none;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+}
 
 
-  
+.card-title-car {
+    font-size: 12px
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-inner {
+    padding: 0;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Stile per il form di contatto */
+.custom-filter-form {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Stile per la barra di ricerca */
+.custom-search-input {
+    background-color: #171717;
+    color: white;
+    border: 2px solid #BD00FF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.custom-search-input:focus {
+    outline: none;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+}
+
+/* Stile per il dropdown */
+.custom-genre-select {
+    background-color: #171717;
+    color: white;
+    border: 2px solid #BD00FF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+/* Quando viene cliccato (focus), lo sfondo resta scuro */
+.custom-form-control:focus {
+    background-color: #2c2c2c;
+    color: white;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+    outline: none;
+}
+
+.custom-genre-select:focus {
+    outline: none;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+}
+
+/* Stile per la textarea */
+.custom-textarea {
+    background-color: #171717;
+    color: white;
+    border: 2px solid #BD00FF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.custom-textarea:focus {
+    outline: none;
+    border-color: #BD00FF;
+    box-shadow: 0 0 5px #BD00FF;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Confirmed and Denied Pages */
+
+.confirmed-section {
+    padding: 0;
+    margin: 0;
+    background-image: url(/public/media/Light\ Gradient\ 06.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%
+}
+
+#confirmed {
+    position: relative;
+    height: 100vh;
+}
+
+#confirmed .confirmed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.confirmed {
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 1.4;
+}
+
+.confirmed .confirmed-error {
+    height: 200px;
+    line-height: 200px;
+}
+
+.confirmed .confirmed-error h1 {
+    font-size: 160px;
+    color: #373737;
+    text-transform: uppercase;
+}
+
+.confirmed h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+}
+
+.confirmed-search {
+    position: relative;
+    padding-right: 123px;
+    max-width: 420px;
+    width: 100%;
+    margin: 30px auto 22px;
+}
+
+.confirmed-search input {
+    width: 100%;
+    height: 40px;
+    padding: 3px 15px;
+    color: #222;
+    font-size: 18px;
+    background: #f8fafb;
+    border: 1px solid rgba(34, 34, 34, 0.2);
+    border-radius: 3px;
+}
+
+.confirmed-search button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.confirmed a {
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.confirmed a>.arrow {
+    position: relative;
+    top: -2px;
+    border: solid #373737;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+@media only screen and (max-width: 767px) {
+    .confirmed .confirmed-error {
+        height: 122px;
+        line-height: 122px;
+    }
+
+    .confirmed .confirmed-error h1 {
+        font-size: 122px;
+    }
+}

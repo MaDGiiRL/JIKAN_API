@@ -29,16 +29,16 @@
             <!-- Left links -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('welcome')}}">Homepage</a>
+                    <a class="nav-link  {{Route::currentRouteName() == 'welcome' ? 'fw-bold' : ''}}" href="{{route('welcome')}}">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('manga')}}">Manga</a>
+                    <a class="nav-link {{Route::currentRouteName() == 'manga' ? 'fw-bold' : ''}}" href="{{route('manga')}}">Manga</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('anime')}}">Anime</a>
+                    <a class="nav-link {{Route::currentRouteName() == 'anime' ? 'fw-bold' : ''}}" href="{{route('anime')}}">Anime</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('contact')}}">Contact Us</a>
+                    <a class="nav-link {{Route::currentRouteName() == 'contact' ? 'fw-bold' : ''}}" href="{{route('contact')}}">Contact Us</a>
                 </li>
             </ul>
             <!-- Left links -->
